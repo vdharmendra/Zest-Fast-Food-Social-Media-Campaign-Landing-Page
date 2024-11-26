@@ -24,10 +24,12 @@
 </ul>
 <br>
 <span>Desktop Desgin</span><br/>
-<a href="" target="_blank" >
+<a href="https://www.behance.net/gallery/213380117/Zest-Fast-Food-Social-Media-Campaign-Landing-Page" target="_blank" >
 <img src="./landing-page.gif" width="575px"/>
 </a>
-<a href="" target="_blank" >
+<br>
+<span>COVER </span><br/>
+<a href="https://www.behance.net/gallery/213380117/Zest-Fast-Food-Social-Media-Campaign-Landing-Page" target="_blank" >
 <img src="./cover.png" width="575px"/>
 </a>
 
