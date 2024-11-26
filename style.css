@@ -1,0 +1,146 @@
+/* RESET DEFAULT CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* BANNER BG STYLE */
+.hero{
+
+    width: 100%;
+    height: 100vh;
+    /* background-color: #f7f7f7; */
+    padding: 20px 10%;
+}
+/* NAVIGATION STYLE */
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo{
+    width: 5%;
+    cursor: pointer;
+}
+
+nav .menu-img{
+    width: 45px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    margin-right: 150px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+    padding: 10px;
+    transition: color .2s;
+}
+
+nav ul li a::before{
+    content: '';
+    width: 100%;
+    height: 0px;
+    background: linear-gradient(45deg, #1dd0f0, #6e0bde);
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: -5px;
+    border-radius: 0 0 8px 8px;
+    transition: height .5s;
+}
+
+nav ul li a:hover::before{
+    height: 85px;
+    color: #fff;
+}
+nav ul li a:hover{
+    color: #fff;
+}
+nav.anim{
+    animation-delay: 0.1s;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    flex-basis: 50%;
+    position: relative;
+}
+.banner-img{
+    width: 90%;
+    margin-top: 10px;
+}
+.thumbnail{
+    width: 280px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    border-radius: 8px;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+.col h1{
+    margin-top: 180px;
+    font-size: 36px;
+    font-weight: 100;
+    font-family: cursive;
+    line-height: 1;
+    animation-delay: 0.3s
+}
+.col h1 span{
+    color: #6e0bde;
+}
+.col p{
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    width: 90%;
+    line-height: 1.4;
+    font-family: sans-serif;
+    letter-spacing: .2px;
+    margin-bottom: 45px;
+    animation-delay: .4s
+}
+.col a{
+    text-decoration: none;
+    padding: 18px 50px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #1dd0f0, #6e0bde);
+    color: #fff;
+    font-weight: 700;
+    margin-top: 70px;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.1);
+    animation-delay:0.5s;
+    transition: color 0.3s;
+
+}
+.col a:hover{
+    background: linear-gradient(45deg, #6e0bde, #1dd0f0);
+    color: #cefdff;
+}
+/* ANIMATION EFFECT */
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup {
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
